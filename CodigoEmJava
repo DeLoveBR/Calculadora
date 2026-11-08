@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class Calculadora {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double V1, V2, resultado;
+        int soma;
+
+        System.out.println("***CALCULADORA***\n");
+        System.out.print("Digite o primeiro valor: ");
+        V1 = sc.nextInt();
+        System.out.print("Digite o segundo valor: ");
+        V2 = sc.nextInt();
+        System.out.println("\n===Digite o Operador===\n");
+        System.out.println("Digite 1 para Soma");
+        System.out.println("Digite 2 para Subtração:");
+        System.out.println("Digite 3 para Multiplicação:");
+        System.out.println("Digite 4 para Dividir:");
+        soma= sc.nextInt();
+
+        switch((int)soma){
+            case 1:
+                resultado = V1 + V2;
+                System.out.println(resultado);
+                break;
+
+                case 2:
+                    resultado = V1 - V2;
+                    System.out.println(resultado);
+                    break;
+
+                    case 3:
+                        resultado = V1 * V2;
+                        System.out.println(resultado);
+                        break;
+
+                        case 4:
+                            resultado = V1 / V2;
+                            System.out.println(resultado);
+                            break;
+
+                            default:
+                                System.out.println("Valor Invalido");
+
+        }
+        System.out.println("\nFIM DO PROGRAMA OBRIGADO!!!");
+    }
+}
